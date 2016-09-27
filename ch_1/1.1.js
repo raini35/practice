@@ -1,5 +1,6 @@
 function check_uniqueness_of(string) {
-
+	
+	//ASCII only has 256 characters
 	if(string.length > 256) {
 		return false; 
 	}
@@ -21,6 +22,7 @@ function check_uniqueness_of(string) {
 	return true; 
 }
 
-var val = check_uniqueness_of("oo"); 
+var sample_string = "oo"
+var val = check_uniqueness_of(sample_string); 
 
 console.log(val); 
