@@ -29,3 +29,23 @@ else {
 	console.log(output); 
 }
 
+/* JAVASCRIPT STRINB BUFFER 
+	var StringBuffer = function() {
+		this.buffer = []; 
+		this.index = 0; 
+	
+	}
+	
+	StringBuffer.prototype = {
+		append: function(s) {
+			this.buffer[this.index] = s; 
+			this.index+=1; 
+			return this; 
+		}, 
+		
+		toString: function() {
+			return this.buffer.join(<q>); 
+		}
+	}	
+	
+*/
