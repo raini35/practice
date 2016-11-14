@@ -40,6 +40,7 @@ function turn_col_zero(array, cols) {
 }	
 
 
+
 function print_array(array) {
 	var string = ""; 
 	for(var i =0; i < array.length; i++) {
@@ -51,6 +52,40 @@ function print_array(array) {
 	
 	console.log(string); 
 }
+
+//UPDATED AFTER LOOKING AT SOLUTION
+function check_for_zeroes2(array) {
+	var m = array.length; 
+	var n = array[0].length; 
+	
+	check(array, m, n); 
+}
+
+function check2(array, row, col) {
+	var columns = []; 
+	var rows = []; 
+	for(var i = 0; i < row; i++) {
+		for(var j = 0; j < col; j++) {
+			if(array[i][j] == 0) {
+				columns[j]= true; 
+				rows[i]= true; 
+			}
+		}
+	}
+
+	turn_row_and_col_zero2(array, rows, columns); 
+}
+
+function turn_row_and_col_zero2(array, rows, cols) {
+	for(var j = 0; j < rows.length; j++) {		
+		for(var i = 0; i < array[0].length; i++) {
+			if(rows[j] || cols[i]){
+				array[j][i] = 0; 
+			}
+		}
+	}
+}
+
 var array = [[1,1,3],[1,1,3],[1,1,3],[1,1,3],[1,0,3]]
 console.log(array); 
 
@@ -59,3 +94,10 @@ check_for_zeroes(array);
 console.log(array);
 
 print_array(array);  
+
+check_for_zeroes2(array); 
+
+console.log(array);
+
+print_array(array);  
+
