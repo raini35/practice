@@ -54,6 +54,10 @@ function print_array(array) {
 }
 
 //UPDATED AFTER LOOKING AT SOLUTION
+//Instead of using another for loop to go through the array of rows and array of columns 
+//I should have used true statements. This allows for a constant Big O because you can 
+//directly access the proper row and column. 
+
 function check_for_zeroes2(array) {
 	var m = array.length; 
 	var n = array[0].length; 
