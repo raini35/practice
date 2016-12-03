@@ -13,3 +13,4 @@ function isSubstring(s1, s2) {
 	var string2 = s2.split(""); 
 	(
 }
+
