@@ -14,3 +14,7 @@ PetStore.prototype.adopt = function() {
 	//readline get name 
 	//check if certain pet exists 
 }
+
+PetStore.prototype.summary = function() {
+	
+}
