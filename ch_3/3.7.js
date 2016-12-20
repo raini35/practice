@@ -16,5 +16,5 @@ PetStore.prototype.adopt = function() {
 }
 
 PetStore.prototype.summary = function() {
-	
+	//implement choices 
 }
