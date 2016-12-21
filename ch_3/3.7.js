@@ -15,6 +15,7 @@ PetStore.prototype.adopt = function() {
 	//check if certain pet exists 
 }
 
+<<<<<<< HEAD
 
 /*
 
@@ -24,3 +25,8 @@ Employee: How can I help you today? Please pick from the following:
 	2. Sell a pet 
 	3. None of the above
 */
+=======
+PetStore.prototype.summary = function() {
+	//implement choices 
+}
+>>>>>>> 6388a221cf106541360607fe419da799356ba97d
