@@ -28,5 +28,6 @@ Employee: How can I help you today? Please pick from the following:
 =======
 PetStore.prototype.summary = function() {
 	//implement choices 
+	//MERGE CONFLICT
 }
 >>>>>>> 6388a221cf106541360607fe419da799356ba97d
